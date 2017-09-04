@@ -24,8 +24,8 @@ EXPOSE 8161
 VOLUME /activemq/data
 VOLUME /activemq/conf
 
-COPY run.sh /run.sh
-RUN chmod +x /run.sh
+COPY cmd.sh /cmd.sh
+RUN chmod +x /cmd.sh
 
 # Launch Activemq
-CMD /run.sh
+CMD /cmd.sh
